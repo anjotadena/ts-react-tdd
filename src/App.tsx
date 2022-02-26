@@ -1,9 +1,9 @@
-import { Button } from "./components";
+import { Button, Header } from "./components";
 
 function App() {
   return (
     <div className="App">
-      app 
+      <Header /> 
       <Button label="test" />
     </div>
   );
