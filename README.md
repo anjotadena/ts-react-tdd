@@ -1,4 +1,7 @@
 # Getting Started with Create React App
+![CI/CD](https://github.com/anjotadena/ts-react-tdd/workflows/CI/CD/badge.svg)
+![License](https://img.shields.io/github/license/anjotadena/react-workflow-gh-actions)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
