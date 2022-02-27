@@ -1,10 +1,10 @@
-import { Button } from "./components";
+import { Home, Header } from "./components";
 
 function App() {
   return (
     <div className="App">
-      app 
-      <Button label="test" />
+      <Header /> 
+      <Home />
     </div>
   );
 }
