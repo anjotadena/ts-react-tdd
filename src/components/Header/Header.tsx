@@ -8,17 +8,21 @@ type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = (props) => {
     return (
-        <nav className="py-3 border-bottom navbar navbar-expand navbar-light">
+        <nav>
             <div>
                 <div data-testid="logo">LOGO</div>
                 <div data-testid="search">Search</div>
-                <div data-testid="menu">Search</div>
+                <div data-testid="menu">Menu</div>
             </div>
-            <div data-testid="home-type">
-                <button>Home filter</button>
+            <div>
+                <button data-testid="home-type">Home type</button>
+                <button data-testid="dates">Dates</button>
+                <button data-testid="guests">Guests</button>
+                <button data-testid="price">Price</button>
+                <button data-testid="rooms">Rooms</button>
+                <button data-testid="amenities">Amenities</button>
             </div>
         </nav>
-        
     );
 }
 
