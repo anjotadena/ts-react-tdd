@@ -2,11 +2,10 @@ import { render, screen } from '@testing-library/react';
 import Button from './Button';
 
 describe('renders button', () => {
-    it('xx', () => {
+  it('xx', () => {
+    render(<Button label="test" />);
 
-        render(<Button label="test" />);
-
-        const linkElement = screen.getByText(/test/i);
-        expect(linkElement).toBeInTheDocument();
-    })
+    const linkElement = screen.getByText(/test/i);
+    expect(linkElement).toBeInTheDocument();
+  });
 });

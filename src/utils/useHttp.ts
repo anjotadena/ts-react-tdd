@@ -1,6 +1,6 @@
-// 
+//
 const useHttp = () => {
-    return {};
+  return {};
 };
 
 export default useHttp;
