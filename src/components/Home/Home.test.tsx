@@ -5,7 +5,6 @@ import {
   render,
   screen,
 } from '@testing-library/react';
-import axios from 'axios';
 import Home from './Home';
 
 jest.mock('axios');
