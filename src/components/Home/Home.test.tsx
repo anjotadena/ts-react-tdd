@@ -1,9 +1,8 @@
 import {
-  act,
   getAllByTestId,
   cleanup,
   render,
-  screen,
+  waitFor,
 } from '@testing-library/react';
 import Home from './Home';
 
@@ -11,16 +10,18 @@ jest.mock('axios');
 
 let container: HTMLElement;
 
-beforeEach(async () => {});
-
-afterEach(cleanup);
-
-it('should show homes', async () => {
-  await act(() => {
-    container = render(<Home />).container;
+describe('Home component', () => {
+  beforeEach(async () => {
+    await waitFor(() => {
+      container = render(<Home />).container;
+    });
   });
 
-  const homes = getAllByTestId(container, 'home');
+  afterEach(cleanup);
 
-  expect(homes.length).toBeGreaterThan(0);
+  it('should show homes', async () => {
+    const homes = getAllByTestId(container, 'home');
+
+    expect(homes.length).toBeGreaterThan(0);
+  });
 });
